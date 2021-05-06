@@ -1,0 +1,68 @@
+.global-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6px;
+}
+
+.global-nav__nav {
+  padding: 0 4px;
+}
+
+.global-nav__items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.global-nav__items .circle {
+  border-radius: 50%;
+}
+
+.global-nav__item {
+  padding-left: 15px;
+}
+
+.global-nav__link {
+  font-size: 1.3rem;
+}
+
+.global-nav__item.btn-container {
+  padding: 4px;
+}
+
+.global-nav__btn {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
+.global-nav__btn :only-child {
+  width: 100%;
+  height: 100%;
+}
+
+.global-nav__btn.apps-btn {
+  padding: 8px;
+}
+
+.global-nav__btn.img-btn {
+  padding: 4px;
+}
+
+.global-logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 625px) {
+  .global-logo__img {
+    width: 272px;
+    height: 92px;
+  }
+}
