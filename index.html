@@ -15,10 +15,12 @@
 
     html {
       font-size: 62.5%;
+      height: 100%;
     }
 
     body {
-      font: 1.5rem arial, sans-serif;
+      font: 1.4rem arial, sans-serif;
+      height: 100%;
       background-color: #fff;
     }
 
@@ -39,15 +41,21 @@
   <div class="global-container">
     <header class="global-nav">
       <nav class="global-nav__nav">
-        <ul class="global-nav__items">
+        <ul class="global-nav__items links">
           <li class="global-nav__item">
-            <a class="global-nav__link text-link" href="#">Gmail</a>
+            <a class="global-nav__link text-link" href="#">
+              <span>Gmail</span>
+            </a>
           </li>
 
           <li class="global-nav__item">
-            <a class="global-nav__link text-link" href="#">Images</a>
+            <a class="global-nav__link text-link" href="#">
+              <span>Images</span>
+            </a>
           </li>
+        </ul>
 
+        <ul class="global-nav__items btns">
           <li class="global-nav__item btn-container circle">
             <a class="global-nav__btn apps-btn" title="Google apps" href="#">
               <svg>
