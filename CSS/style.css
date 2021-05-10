@@ -4,62 +4,57 @@
   height: 100%;
 }
 
-.global-nav {
+.g-nav {
   display: flex;
   justify-content: flex-end;
   padding: 6px;
   height: 60px;
 }
 
-.global-nav__nav {
+.g-nav__container {
   display: inline-flex;
   padding: 0 4px;
 }
 
-.global-nav__items {
+.g-nav__items {
   display: flex;
   align-items: center;
   list-style: none;
   padding: 0;
 }
 
-.global-nav__items.links {
+.g-nav__items.links {
   padding-right: 15px;
 }
 
-.global-nav__link {
+.g-nav__link {
   padding-left: 15px;
   font-size: 1.3rem;
 }
 
-.global-nav__items.btns .circle {
+.g-nav__items.btns .circle {
   border-radius: 50%;
 }
 
-.global-nav__item.btn-container {
+.g-nav__item.btn-container {
   padding: 4px;
 }
 
-.global-nav__btn {
+.g-nav__btn {
   display: flex;
   height: 40px;
   width: 40px;
 }
 
-.global-nav__btn > :only-child {
-  width: 100%;
-  height: 100%;
-}
-
-.global-nav__btn.apps-btn {
+.g-nav__btn.apps-btn {
   padding: 8px;
 }
 
-.global-nav__btn.img-btn {
+.g-nav__btn.img-btn {
   padding: 4px;
 }
 
-.global-logo {
+.g-logo {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -68,13 +63,106 @@
   max-height: 200px;
 }
 
+.g-form {
+  text-align: center;
+  padding: 13px;
+  max-height: 166px;
+}
+
+.g-form__container {
+  max-width: 584px;
+  padding-top: 6px;
+  margin: 0 auto;
+}
+
+.g-form__global-input {
+  box-sizing: content-box;
+  display: flex;
+  height: 44px;
+  border: 1px solid lightgrey;
+  border-radius: 24px;
+}
+
+.g-form__global-input:hover {
+  box-shadow: 0 1px 7px 1px rgb(30 30 30 / 30%);
+  border-color: transparent;
+}
+
+.g-form__input-container {
+  flex: 1;
+  display: flex;
+  padding: 5px 10px 5px 15px;
+}
+
+.g-form__search-icon-container {
+  display: flex;
+  padding-right: 13px;
+}
+
+.g-form__search-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.g-form__input {
+  flex: 100%;
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.g-form__micro-icon-container {
+  display: flex;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.g-form__micro-icon {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.g-form__btns-container {
+  box-sizing: content-box;
+  height: 70px;
+  padding-top: 18px;
+}
+
+.g-form__btns-container input[type="submit"] {
+  font: inherit;
+  color: rgb(70 70 70);
+  height: 36px;
+  padding: 0 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  margin: 11px 4px;
+  cursor: pointer;
+}
+
+.g-form__btns-container input[type="submit"]:hover {
+  color: inherit;
+  border: 1px solid #dadce0;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%);
+}
+
 @media (min-width: 625px) {
-  .global-logo {
+  .g-logo {
     max-height: 290px;
   }
 
-  .global-logo__img {
+  .g-logo__img {
     width: 272px;
     height: 92px;
+  }
+
+  .g-form {
+    padding: 20px;
   }
 }
