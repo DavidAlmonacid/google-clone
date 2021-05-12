@@ -23,13 +23,21 @@
   padding: 0;
 }
 
+.g-nav__item {
+  padding-left: 15px;
+}
+
+.g-nav__item > :only-child {
+  user-select: none;
+}
+
 .g-nav__items.links {
   padding-right: 15px;
 }
 
 .g-nav__link {
-  padding-left: 15px;
-  font-size: 1.3rem;
+  color: inherit;
+  font-size: small;
 }
 
 .g-nav__items.btns .circle {
@@ -55,10 +63,10 @@
 }
 
 .g-logo {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: calc(100% - 560px);
   min-height: 92px;
   max-height: 200px;
 }
@@ -152,6 +160,65 @@
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%);
 }
 
+.change-language {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: small;
+  margin-bottom: 24px;
+}
+
+.change-language__text {
+  display: flex;
+}
+
+.change-language__text :first-child:hover {
+  text-decoration: none;
+}
+
+.change-language__text :last-child {
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+.g-footer {
+  color: #70757a;
+  background-color: #f2f2f2;
+}
+
+.g-footer__country {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.g-footer__global-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.g-footer__global-links > div[class*="links"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.g-footer__link {
+  font: inherit;
+  color: inherit;
+  padding: 15px;
+}
+
+.g-footer__right-links button:only-of-type {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 @media (min-width: 625px) {
   .g-logo {
     max-height: 290px;
@@ -164,5 +231,11 @@
 
   .g-form {
     padding: 20px;
+  }
+}
+
+@media (min-width: 664px) {
+  .g-footer__global-links {
+    justify-content: space-between;
   }
 }
