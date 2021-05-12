@@ -19,17 +19,18 @@
     }
 
     body {
-      background-color: darkslategrey;
       font: 1.4rem arial, sans-serif;
+      color: #222;
       height: 100%;
     }
 
-    .text-link {
+    .formatted-text {
+      display: block;
       text-decoration: none;
-      color: inherit;
+      line-height: 24px;
     }
 
-    .text-link:hover {
+    .formatted-text:hover {
       text-decoration: underline;
     }
 
@@ -48,14 +49,14 @@
       <nav class="g-nav__container">
         <ul class="g-nav__items links">
           <li class="g-nav__item">
-            <a class="g-nav__link text-link" href="https://mail.google.com/mail/&ogbl">
-              <span>Gmail</span>
+            <a class="g-nav__link formatted-text" href="https://mail.google.com/mail/&ogbl">
+              Gmail
             </a>
           </li>
 
           <li class="g-nav__item">
-            <a class="g-nav__link text-link" href="https://www.google.com.co/imghp?hl=en&ogbl">
-              <span>Images</span>
+            <a class="g-nav__link formatted-text" href="https://www.google.com.co/imghp?hl=en&ogbl">
+              Images
             </a>
           </li>
         </ul>
@@ -73,12 +74,11 @@
           </li>
 
           <li class="g-nav__item btn-container">
-            <a class="g-nav__btn img-btn" title="Google Account" role="button" target="_blank"
-              rel="noopener noreferrer"
-              href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/">
-              <img class="full-width-and-height circle"
-                src="https://lh3.googleusercontent.com/ogw/ADGmqu8ajnQ-D_jti0v73lfR8zk1je_7od40Fikq78M5qw=s64-c-mo"
-                alt="Profile picture">
+            <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"
+              class="g-nav__btn img-btn" title="Google Account" role="button" target="_blank"
+              rel="noopener noreferrer">
+              <img class="full-width-and-height circle" alt="Profile picture"
+                src="https://lh3.googleusercontent.com/ogw/ADGmqu8ajnQ-D_jti0v73lfR8zk1je_7od40Fikq78M5qw=s64-c-mo">
             </a>
           </li>
         </ul>
@@ -133,8 +133,35 @@
       </form>
     </div>
 
-    <footer>
+    <section class="change-language">
+      <h2 hidden>Change language</h2>
 
+      <p class="change-language__text">
+        <span class="formatted-text">Google offered in: </span>
+        <a class="formatted-text" target="_blank" rel="noopener noreferrer"
+          href="https://www.google.com/setprefs?sig=0_u4MeFPW1D7TqJMq-D6mr0wLVKbM%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjA37H-l8DwAhVbMVkFHfDQDnQQ2ZgBCA4">
+          Español (Latinoamérica)
+        </a>
+      </p>
+    </section>
+
+    <footer class="g-footer">
+      <p class="g-footer__country">Colombia</p>
+
+      <div class="g-footer__global-links">
+        <div class="g-footer__left-links">
+          <a class="g-footer__link formatted-text" href="#">About</a>
+          <a class="g-footer__link formatted-text" href="#">Advertising</a>
+          <a class="g-footer__link formatted-text" href="#">Business</a>
+          <a class="g-footer__link formatted-text" href="#">How Search works</a>
+        </div>
+
+        <div class="g-footer__right-links">
+          <a class="g-footer__link formatted-text" href="#">Privacy</a>
+          <a class="g-footer__link formatted-text" href="#">Terms</a>
+          <button class="g-footer__link formatted-text" href="#">Settings</button>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
