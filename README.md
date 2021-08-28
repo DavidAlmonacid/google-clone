@@ -2,7 +2,7 @@
 
 Project from Platzi's HTML and CSS practical course.
 
-![](https://imagizer.imageshack.com/img922/7825/X3SRUx.png)
+[![google-clone.png](https://i.postimg.cc/MGf629wY/google-clone.png)](https://postimg.cc/qt0V2Xzt)
 
 ## Built with
 
