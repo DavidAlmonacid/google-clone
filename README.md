@@ -2,7 +2,7 @@
 
 Project from Platzi's HTML and CSS practical course.
 
-![google-clone.png](https://i.postimg.cc/MGf629wY/google-clone.png)
+![google-clone.png](https://i.imgur.com/JAkw8v2.png)
 
 ## Built with
 
